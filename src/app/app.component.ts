@@ -20,5 +20,8 @@ export class AppComponent {
       console.log("fhbdfnkjfn",this. names);
 
     })
-  }
+      }
+      myFunction(){
+        
+      }
 }
