@@ -1,3 +1,8 @@
+<div style="width: 100px;height: 20px;">
+  <select style="width: 100px;" [(ngModel)]="selectedProduct" (change)="onChange();">
+  <option *ngFor="let product of products" [value]="product.p_category">{{product.p_category}}</option>
+</select>
+</div>
 <ul>
   <li *ngFor="let product of products" >
     <div class="div-grid-item card">
@@ -11,16 +16,18 @@
     <input type="number" id="quantity" name="quantity" min="0" max="5"> 
     <button style="width: 60px; margin-left: 5px;" onclick="myFunction()">Add</button>
 </div>
-    <!-- <img style="height: 50px;width: 50px;margin-top: 10px;" src='{{"../../assets/images/" + product.p_name + ".png"}}' alt="{{product.p_name}}"> -->
+   
   </div>
   <div>
-
+    
 
   </div>
   </div>
  
      <!-- <span aria-hidden="true">{{dat.cmd}}</span> -->
   </li>
+  <button style="width: 60px; margin-left: 5px;" onclick="submit()">Submit</button>
+
 </ul>
 
 

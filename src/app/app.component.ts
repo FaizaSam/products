@@ -11,6 +11,7 @@ export class AppComponent {
   names:any;
   title = 'products';
   products: any;
+  selectedProduct:any;
   constructor(private httpClient: HttpClient){}
   ngOnInit(){
     this.httpClient.get("assets/data.json").subscribe(data =>{
@@ -21,7 +22,10 @@ export class AppComponent {
 
     })
       }
-      myFunction(){
+      submit(){
+
+      }
+      onChange(){
         
       }
 }
